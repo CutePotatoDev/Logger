@@ -1,7 +1,6 @@
 /*
  * Logger.c
- *
- * Created: 2017-02-20 02:09:16
+  * Created: 2017-02-20 02:09:16
  */ 
 
 #include <string.h>
@@ -9,7 +8,6 @@
 #include <util/delay.h>
 #include <avr/pgmspace.h>
 #include <stdio.h>
-
 #include "databus/uart.h"
 #include "databus/spi.h"
 #include "systems/log.h"
@@ -20,8 +18,6 @@
 #include "systems/sdcard/mmc_avr.h"
 
 #define DRV_MMC 0
-
-
 
 int main(void) {
   
