@@ -15,5 +15,5 @@ void UCLOCK_Init();
 unsigned int UCLOCK_Millis();
 //Return String formated uptime value.
 char* UCLOCK_Uptime();
-
+char* UCLOCK_Uptime_Dellimiter(char * del);
 #endif /* UCLOCK_H_ */

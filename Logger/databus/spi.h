@@ -8,22 +8,22 @@
 #define SPI_H_
 
 //SPI port and pins defines.
-#define SPI_PORT    DDRB
-#define MOSI        B,3
-#define MISO        B,4
-#define SCK         B,5
-#define CS          B,2
+//#define SPI_PORT    DDRB
+#define MOSI        B,5
+#define MISO        B,6
+#define SCK         B,7
+#define CS          B,4
 
 #define SPI_ENABLECS(x)     LOW(x)
 #define SPI_DISABLECS(x)    HIGH(x)
 
-#define SPI_ENABLE              (1 << SPE)
-#define SPI_MASTER_ENABLE       (1 << MSTR)
+#define SPI_ENABLE              (1 << SPE0)
+#define SPI_MASTER_ENABLE       (1 << MSTR0)
 
-#define SPI_INTERRUP_ENABLE     (1 << SPIF)
-#define SPI_DOUBLE_SPEED        (1 << SPI2X)
+#define SPI_INTERRUP_ENABLE     (1 << SPIF0)
+#define SPI_DOUBLE_SPEED        (1 << SPI2X0)
 
-#define SPI_DATA_REGISTER SPDR
+#define SPI_DATA_REGISTER SPDR0
 
 
 //Init as master.

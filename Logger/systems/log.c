@@ -17,7 +17,7 @@ void LOG_Config(char* s){
 	strcat(log_, " [C] ");
 	strcat(log_, s);
 	
-	UART_Println(log_);
+	UART1_Println(log_);
 }
 
 void LOG_Info(char* s){
@@ -26,7 +26,7 @@ void LOG_Info(char* s){
 	strcat(log_, " [I] ");
 	strcat(log_, s);
 	
-	UART_Println(log_);
+	UART1_Println(log_);
 }
 
 void LOG_Warning(char* s){
@@ -35,7 +35,7 @@ void LOG_Warning(char* s){
 	strcat(log_, " [W] ");
 	strcat(log_, s);
 	
-	UART_Println(log_);
+	UART1_Println(log_);
 }
 
 void LOG_Error(char* s){
@@ -44,5 +44,5 @@ void LOG_Error(char* s){
 	strcat(log_, " [E] ");
 	strcat(log_, s);
 	
-	UART_Println(log_);
+	UART1_Println(log_);
 }
