@@ -7,12 +7,14 @@
 /* storage control modules to the FatFs module with a defined API.       */
 /*-----------------------------------------------------------------------*/
 
+#include "../../config.h"
+
 #include "diskio.h"		/* FatFs lower layer API */
-#ifdef DRV_CFC
+    #ifdef DRV_CFC
 #include "cfc_avr.h"	/* Header file of existing CF control module */
 #endif
 #ifdef DRV_MMC
-#include "mmc_avr.h"	/* Header file of existing SD control module */
+    #include "mmc_avr.h"	/* Header file of existing SD control module */
 #endif
 
 
@@ -42,20 +44,17 @@ DSTATUS disk_status (
 /*-----------------------------------------------------------------------*/
 /* Inidialize a Drive                                                    */
 /*-----------------------------------------------------------------------*/
-
-DSTATUS disk_initialize (
-	BYTE pdrv				/* Physical drive nmuber to identify the drive */
-)
-{
+/* Physical drive nmuber to identify the drive */
+DSTATUS disk_initialize(BYTE pdrv) {
 	switch (pdrv) {
-#ifdef DRV_CFC
-	case DRV_CFC :
-		return cf_disk_initialize();
-#endif
-#ifdef DRV_MMC
-	case DRV_MMC :
-		return mmc_disk_initialize();
-#endif
+        #ifdef DRV_CFC
+	        case DRV_CFC :
+		        return cf_disk_initialize();
+        #endif
+        #ifdef DRV_MMC
+	        case DRV_MMC :
+		        return mmc_disk_initialize();
+        #endif
 	}
 	return STA_NOINIT;
 }

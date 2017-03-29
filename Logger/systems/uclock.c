@@ -70,18 +70,22 @@ void NumberFormat(char* s, unsigned int val){
 
 char uptime[12];
 
-char* UCLOCK_Uptime(){
+char* UCLOCK_Uptime_Dellimiter(char * del){
 	//Init uptime.
 	*uptime = 0;
 	unsigned long millis = UCLOCK_Millis();
 	
 	NumberFormat(uptime, Days(millis));
-	strcat(uptime, ":");
+	strcat(uptime, del);
 	NumberFormat(uptime, Hours(millis));
-	strcat(uptime, ":");
+	strcat(uptime, del);
 	NumberFormat(uptime, Minutes(millis));
-	strcat(uptime, ":");
+	strcat(uptime, del);
 	NumberFormat(uptime, Seconds(millis));
 	
 	return uptime;
+}
+
+char* UCLOCK_Uptime(){
+    return UCLOCK_Uptime_Dellimiter(":");
 }

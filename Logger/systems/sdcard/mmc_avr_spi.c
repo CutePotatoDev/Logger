@@ -1,33 +1,20 @@
-/*-----------------------------------------------------------------------*/
-/* MMCv3/SDv1/SDv2 Controls via AVR SPI module                           */
-/*-----------------------------------------------------------------------*/
-/*
-/  Copyright (C) 2016, ChaN, all right reserved.
-/
-/ * This software is a free software and there is NO WARRANTY.
-/ * No restriction on use. You can use, modify and redistribute it for
-/   any purpose as you like UNDER YOUR RESPONSIBILITY.
-/ * Redistributions of source code must retain the above copyright notice.
-/
-/-------------------------------------------------------------------------*/
-
 #include <avr/io.h>
 #include "diskio.h"
 #include "mmc_avr.h"
+#include "../../databus/spi.h"
+#include "../../config.h"
 
-/* Peripheral controls (Platform dependent) */
-#define CS_LOW()		PORTB &= ~(1 <<PINB4)	/* Set MMC_CS = low */
-#define	CS_HIGH()		PORTB |= (1 <<PINB4) 	/* Set MMC_CS = high */
-#define MMC_CD			1						/* Test if card detected.   yes:true, no:false, default:true */
-#define MMC_WP			(!MMC_CD)				/* Test if write protected. yes:true, no:false, default:false */
-#define	FCLK_SLOW()		SPCR = 0x52				/* Set SPI slow clock (100-400kHz) */
-#define	FCLK_FAST()		SPCR = 0x50				/* Set SPI fast clock (20MHz max) */
+//Peripheral controls (Platform dependent).
+#define CS_LOW()		LOW(SD_CSPIN)	    //Set MMC_CS = low.
+#define	CS_HIGH()		HIGH(SD_CSPIN) 	    //Set MMC_CS = high.
+#define MMC_CD			1				    //Test if card detected.   yes:true, no:false, default:true
+#define MMC_WP			(!MMC_CD)			//Test if write protected. yes:true, no:false, default:false
+#define	FCLK_SLOW()		0//SPCR0 = (1 << SPE0) | (1 << MSTR0) | (1 << SPR10)				/* Set SPI slow clock (100-400kHz) */
+#define	FCLK_FAST()		0//SPCR0 = (1 << SPE0) | (1 << MSTR0)				/* Set SPI fast clock (20MHz max) */
 
 
 /*--------------------------------------------------------------------------
-
    Module Private Functions
-
 ---------------------------------------------------------------------------*/
 
 /* Definitions for MMC/SDC command */
@@ -62,66 +49,27 @@ static volatile
 BYTE Timer1, Timer2;	/* 100Hz decrement timer */
 
 static
-BYTE CardType;			/* Card type flags (b0:MMC, b1:SDv1, b2:SDv2, b3:Block addressing) */
+BYTE CardType;			//Card type flags (b0:MMC, b1:SDv1, b2:SDv2, b3:Block addressing).
 
 
 
-/*-----------------------------------------------------------------------*/
-/* Power Control  (Platform dependent)                                   */
-/*-----------------------------------------------------------------------*/
-/* When the target system does not support socket power control, there   */
-/* is nothing to do in these functions and chk_power always returns 1.   */
+//Power Control  (Platform dependent)
+//When the target system does not support socket power control, there
+//is nothing to do in these functions and chk_power always returns 1.
+static void power_on (void) {
+}
 
-static
-void power_on (void)
-{
-	/* Trun socket power on and wait for 10ms+ (nothing to do if no power controls) */
-	//To be filled
-
-
-	/* Configure MOSI/MISO/SCLK/CS pins */
-	//To be filled
-
-
-	/* Enable SPI module in SPI mode 0 */
-	//To be filled
+static void power_off (void) {
 }
 
 
-static
-void power_off (void)
-{
-	/* Disable SPI function */
-	//To be filled
-
-
-	/* De-configure MOSI/MISO/SCLK/CS pins (set hi-z) */
-	//To be filled
-
-
-	/* Trun socket power off (nothing to do if no power controls) */
-	//To be filled
+//Transmit/Receive data from/to MMC via SPI  (Platform dependent).
+//Exchange a byte.
+static BYTE xchg_spi (BYTE dat) {
+	return SPI_Send(dat);
 }
 
-
-
-/*-----------------------------------------------------------------------*/
-/* Transmit/Receive data from/to MMC via SPI  (Platform dependent)       */
-/*-----------------------------------------------------------------------*/
-
-/* Exchange a byte */
-static
-BYTE xchg_spi (		/* Returns received data */
-	BYTE dat		/* Data to be sent */
-)
-{
-	SPDR = dat;
-	loop_until_bit_is_set(SPSR, SPIF);
-	return SPDR;
-}
-
-
-/* Receive a data block fast */
+//Receive a data block fast.
 static
 void rcvr_spi_multi (
 	BYTE *p,	/* Data read buffer */
@@ -129,12 +77,12 @@ void rcvr_spi_multi (
 )
 {
 	do {
-		SPDR = 0xFF;
-		loop_until_bit_is_set(SPSR, SPIF);
-		*p++ = SPDR;
-		SPDR = 0xFF;
-		loop_until_bit_is_set(SPSR, SPIF);
-		*p++ = SPDR;
+		SPDR0 = 0xFF;
+		loop_until_bit_is_set(SPSR0, SPIF0);
+		*p++ = SPDR0;
+		SPDR0 = 0xFF;
+		loop_until_bit_is_set(SPSR0, SPIF0);
+		*p++ = SPDR0;
 	} while (cnt -= 2);
 }
 
@@ -147,66 +95,43 @@ void xmit_spi_multi (
 )
 {
 	do {
-		SPDR = *p++;
-		loop_until_bit_is_set(SPSR, SPIF);
-		SPDR = *p++;
-		loop_until_bit_is_set(SPSR, SPIF);
+		SPDR0 = *p++;
+		loop_until_bit_is_set(SPSR0, SPIF0);
+		SPDR0 = *p++;
+		loop_until_bit_is_set(SPSR0, SPIF0);
 	} while (cnt -= 2);
 }
 
 
 
-/*-----------------------------------------------------------------------*/
-/* Wait for card ready                                                   */
-/*-----------------------------------------------------------------------*/
-
-static
-int wait_ready (	/* 1:Ready, 0:Timeout */
-	UINT wt			/* Timeout [ms] */
-)
-{
+//Wait for card ready.
+static int wait_ready (UINT wt) {
 	BYTE d;
-
 
 	Timer2 = wt / 10;
 	do
 		d = xchg_spi(0xFF);
 	while (d != 0xFF && Timer2);
 
-	return (d == 0xFF) ? 1 : 0;
+	return (d == 0xFF) ? 1 : 0; //1:Ready, 0:Timeout.
 }
 
-
-
-/*-----------------------------------------------------------------------*/
-/* Deselect the card and release SPI bus                                 */
-/*-----------------------------------------------------------------------*/
-
-static
-void deselect (void)
-{
-	CS_HIGH();		/* Set CS# high */
-	xchg_spi(0xFF);	/* Dummy clock (force DO hi-z for multiple slave SPI) */
+//Unselect the card and release SPI bus.
+static void deselect (void) {
+	CS_HIGH();		//Set CS# high.
+	xchg_spi(0xFF);	//Dummy clock (force DO hi-z for multiple slave SPI).
 }
 
-
-
-/*-----------------------------------------------------------------------*/
-/* Select the card and wait for ready                                    */
-/*-----------------------------------------------------------------------*/
-
-static
-int select (void)	/* 1:Successful, 0:Timeout */
-{
-	CS_LOW();		/* Set CS# low */
-	xchg_spi(0xFF);	/* Dummy clock (force DO enabled) */
-	if (wait_ready(500)) return 1;	/* Wait for card ready */
+//Select the card and wait for ready.
+static int select (void) {	//1:Successful, 0:Timeout
+	CS_LOW();		//Set CS# low.
+	xchg_spi(0xFF);	//Dummy clock (force DO enabled).
+	if (wait_ready(500)) 
+        return 1;	//Wait for card ready.
 
 	deselect();
-	return 0;	/* Timeout */
+	return 0;	//Timeout.
 }
-
-
 
 /*-----------------------------------------------------------------------*/
 /* Receive a data packet from MMC                                        */
@@ -268,96 +193,97 @@ int xmit_datablock (
 
 
 
-/*-----------------------------------------------------------------------*/
-/* Send a command packet to MMC                                          */
-/*-----------------------------------------------------------------------*/
-
-static
-BYTE send_cmd (		/* Returns R1 resp (bit7==1:Send failed) */
-	BYTE cmd,		/* Command index */
-	DWORD arg		/* Argument */
-)
-{
+//Send a command packet to MMC.
+//Returns R1 resp (bit7==1:Send failed).
+static BYTE send_cmd (BYTE cmd,	DWORD arg) {
 	BYTE n, res;
 
-
-	if (cmd & 0x80) {	/* ACMD<n> is the command sequense of CMD55-CMD<n> */
+	if (cmd & 0x80) {	//ACMD<n> is the command sequense of CMD55-CMD<n>.
 		cmd &= 0x7F;
 		res = send_cmd(CMD55, 0);
-		if (res > 1) return res;
+		if (res > 1) 
+            return res;
 	}
 
-	/* Select the card and wait for ready except to stop multiple block read */
+	//Select the card and wait for ready except to stop multiple block read.
 	if (cmd != CMD12) {
 		deselect();
-		if (!select()) return 0xFF;
+		if (!select()) 
+            return 0xFF;
 	}
 
-	/* Send command packet */
-	xchg_spi(0x40 | cmd);				/* Start + Command index */
-	xchg_spi((BYTE)(arg >> 24));		/* Argument[31..24] */
-	xchg_spi((BYTE)(arg >> 16));		/* Argument[23..16] */
-	xchg_spi((BYTE)(arg >> 8));			/* Argument[15..8] */
-	xchg_spi((BYTE)arg);				/* Argument[7..0] */
-	n = 0x01;							/* Dummy CRC + Stop */
-	if (cmd == CMD0) n = 0x95;			/* Valid CRC for CMD0(0) + Stop */
-	if (cmd == CMD8) n = 0x87;			/* Valid CRC for CMD8(0x1AA) Stop */
-	xchg_spi(n);
+	//Send command packet.
+	xchg_spi(0x40 | cmd);				//Start + Command index.
+	xchg_spi((BYTE)(arg >> 24));		//Argument[31..24].
+	xchg_spi((BYTE)(arg >> 16));		//Argument[23..16].
+	xchg_spi((BYTE)(arg >> 8));			//Argument[15..8].
+	xchg_spi((BYTE)arg);				//Argument[7..0].
+	n = 0x01;							//Dummy CRC + Stop.
+	if (cmd == CMD0)
+        n = 0x95;			//Valid CRC for CMD0(0) + Stop.
+	if (cmd == CMD8) 
+        n = 0x87;			//Valid CRC for CMD8(0x1AA) Stop.
+	
+    xchg_spi(n);
 
-	/* Receive command response */
-	if (cmd == CMD12) xchg_spi(0xFF);		/* Skip a stuff byte when stop reading */
-	n = 10;								/* Wait for a valid response in timeout of 10 attempts */
+	//Receive command response.
+	if (cmd == CMD12) 
+        xchg_spi(0xFF);		//Skip a stuff byte when stop reading.
+	
+    n = 10;					//Wait for a valid response in timeout of 10 attempts.
 	do
 		res = xchg_spi(0xFF);
 	while ((res & 0x80) && --n);
 
-	return res;			/* Return with the response value */
+	return res;			//Return with the response value.
 }
 
 
 
 /*--------------------------------------------------------------------------
-
    Public Functions
-
 ---------------------------------------------------------------------------*/
 
-
-/*-----------------------------------------------------------------------*/
-/* Initialize Disk Drive                                                 */
-/*-----------------------------------------------------------------------*/
-
-DSTATUS mmc_disk_initialize (void)
-{
+//Initialize Disk Drive.
+DSTATUS mmc_disk_initialize (void) {
 	BYTE n, cmd, ty, ocr[4];
-
-
+    
 	power_off();						/* Turn off the socket power to reset the card */
-	for (Timer1 = 10; Timer1; ) ;		/* Wait for 100ms */
-	if (Stat & STA_NODISK) return Stat;	/* No card in the socket? */
+	for (Timer1 = 10; Timer1; );		/* Wait for 100ms */
+	if (Stat & STA_NODISK) 
+        return Stat;	/* No card in the socket? */
 
 	power_on();							/* Turn on the socket power */
 	FCLK_SLOW();
-	for (n = 10; n; n--) xchg_spi(0xFF);	/* 80 dummy clocks */
+	for (n = 10; n; n--) 
+        xchg_spi(0xFF);	/* 80 dummy clocks */
 
 	ty = 0;
 	if (send_cmd(CMD0, 0) == 1) {			/* Put the card SPI mode */
 		Timer1 = 100;						/* Initialization timeout of 1000 msec */
-		if (send_cmd(CMD8, 0x1AA) == 1) {	/* Is the card SDv2? */
-			for (n = 0; n < 4; n++) ocr[n] = xchg_spi(0xFF);	/* Get trailing return value of R7 resp */
-			if (ocr[2] == 0x01 && ocr[3] == 0xAA) {				/* The card can work at vdd range of 2.7-3.6V */
+		
+        if (send_cmd(CMD8, 0x1AA) == 1) {	/* Is the card SDv2? */
+			for (n = 0; n < 4; n++) 
+                ocr[n] = xchg_spi(0xFF);	/* Get trailing return value of R7 resp */
+			
+            if (ocr[2] == 0x01 && ocr[3] == 0xAA) {				/* The card can work at vdd range of 2.7-3.6V */
 				while (Timer1 && send_cmd(ACMD41, 1UL << 30));	/* Wait for leaving idle state (ACMD41 with HCS bit) */
-				if (Timer1 && send_cmd(CMD58, 0) == 0) {		/* Check CCS bit in the OCR */
-					for (n = 0; n < 4; n++) ocr[n] = xchg_spi(0xFF);
+				
+                if (Timer1 && send_cmd(CMD58, 0) == 0) {		/* Check CCS bit in the OCR */
+					for (n = 0; n < 4; n++) 
+                        ocr[n] = xchg_spi(0xFF);
+                        
 					ty = (ocr[0] & 0x40) ? CT_SD2 | CT_BLOCK : CT_SD2;	/* Check if the card is SDv2 */
 				}
 			}
 		} else {							/* SDv1 or MMCv3 */
-			if (send_cmd(ACMD41, 0) <= 1) 	{
-				ty = CT_SD1; cmd = ACMD41;	/* SDv1 */
+			if (send_cmd(ACMD41, 0) <= 1){
+				ty = CT_SD1;
+                cmd = ACMD41;	/* SDv1 */
 			} else {
-				ty = CT_MMC; cmd = CMD1;	/* MMCv3 */
-			}
+				ty = CT_MMC;
+                cmd = CMD1;	/* MMCv3 */
+            }		    
 			while (Timer1 && send_cmd(cmd, 0));			/* Wait for leaving idle state */
 			if (!Timer1 || send_cmd(CMD16, 512) != 0)	/* Set R/W block length to 512 */
 				ty = 0;
@@ -369,21 +295,15 @@ DSTATUS mmc_disk_initialize (void)
 	if (ty) {			/* Initialization succeded */
 		Stat &= ~STA_NOINIT;		/* Clear STA_NOINIT */
 		FCLK_FAST();
-	} else {			/* Initialization failed */
+	} else			/* Initialization failed */
 		power_off();
-	}
 
 	return Stat;
 }
 
 
-
-/*-----------------------------------------------------------------------*/
-/* Get Disk Status                                                       */
-/*-----------------------------------------------------------------------*/
-
-DSTATUS mmc_disk_status (void)
-{
+//Get Disk Status.
+DSTATUS mmc_disk_status (void) {
 	return Stat;
 }
 
@@ -626,33 +546,31 @@ DRESULT mmc_disk_ioctl (
 #endif
 
 
-/*-----------------------------------------------------------------------*/
-/* Device Timer Interrupt Procedure                                      */
-/*-----------------------------------------------------------------------*/
-/* This function must be called in period of 10ms                        */
-
-void mmc_disk_timerproc (void)
-{
+//Device Timer Interrupt Procedure.
+//This function must be called in period of 10ms.
+void mmc_disk_timerproc (void) {
 	BYTE n, s;
 
-
-	n = Timer1;				/* 100Hz decrement timer */
-	if (n) Timer1 = --n;
-	n = Timer2;
-	if (n) Timer2 = --n;
+	n = Timer1;				//100Hz decrement timer.
+	if (n) 
+        Timer1 = --n;
+	
+    n = Timer2;
+	if (n) 
+        Timer2 = --n;
 
 	s = Stat;
 
-	if (MMC_WP)				/* Write protected */
+	if (MMC_WP)				//Write protected.
 		s |= STA_PROTECT;
-	else					/* Write enabled */
+	else					//Write enabled.
 		s &= ~STA_PROTECT;
 
-	if (MMC_CD)				/* Card inserted */
+	if (MMC_CD)				//Card inserted.
 		s &= ~STA_NODISK;
-	else					/* Socket empty */
+	else					//Socket empty.
 		s |= (STA_NODISK | STA_NOINIT);
 
-	Stat = s;				/* Update MMC status */
+	Stat = s;				//Update MMC status.
 }
 

@@ -11,20 +11,21 @@
 
 void SPI_InitMaster(void){
     //Set MOSI and SCK as output.
-    OUTPUT(CS);
-    OUTPUT(SCK);
-    INPUT(MISO);
-        
-    HIGH(MOSI);
-    HIGH(MISO);
-    LOW(SCK);
-    HIGH(CS);
+     OUTPUT(CS);
+     OUTPUT(SCK);
+     OUTPUT(MOSI);
+     INPUT(MISO);
+         
+//      HIGH(MOSI);
+//      HIGH(MISO);
+//      LOW(SCK);
+//      HIGH(CS);
     
     //Set double speed of SPI -> F_CPU/2.
-    SPSR |= SPI_DOUBLE_SPEED;
+    SPSR0 |= SPI_DOUBLE_SPEED;
     
     //Enable SPI.
-    SPCR |= SPI_ENABLE | SPI_MASTER_ENABLE;
+    SPCR0 |= SPI_ENABLE | SPI_MASTER_ENABLE;
 }
 
 uint8_t SPI_Send(uint8_t data){
@@ -32,7 +33,7 @@ uint8_t SPI_Send(uint8_t data){
     SPI_DATA_REGISTER = data;
     
     //Wait until transmission complete.
-    while(!(SPSR & SPI_INTERRUP_ENABLE));
+    while(!(SPSR0 & SPI_INTERRUP_ENABLE));
     
     // Return received data.
     return(SPI_DATA_REGISTER);
