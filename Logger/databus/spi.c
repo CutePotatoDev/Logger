@@ -4,9 +4,8 @@
  * Created: 2017-01-25 08:01:26
  */ 
 
-#include <avr/io.h>
-
 #include "../globals.h"
+#include <avr/io.h>
 #include "spi.h"
 
 void SPI_InitMaster(void){

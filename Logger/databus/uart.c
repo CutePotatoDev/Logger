@@ -13,9 +13,9 @@
 
 
 //Static Variables
-// static unsigned char UART_RXBuffer[UART_RX_BUFFER_SIZE];
-// static volatile unsigned char UART_RXHead;
-// static volatile unsigned char UART_RXTail;
+static unsigned char UART1_RXBuffer[UART1_RX_BUFFER_SIZE];
+static volatile unsigned char UART_RXHead;
+static volatile unsigned char UART_RXTail;
 static unsigned char UART_TXBuffer[UART1_TX_BUFFER_SIZE];
 static volatile unsigned char UART_TXHead;
 static volatile unsigned char UART_TXTail;
@@ -48,20 +48,19 @@ void UART1_Init(){
     sei();
 }
 
-// ISR(USART_RX_vect){
-// 	  unsigned char data;
-// 	  unsigned char tmphead;
-// 	  
-// 	  data = UDR;                                      /* read the received data */
-// 	  /* calculate buffer index */
-// 	  tmphead = ( UART_RxHead + 1 ) & UART_RX_BUFFER_MASK;
-// 	  UART_RxHead = tmphead;                           /* store new index */
-// 	  if ( tmphead == UART_RxTail )
-// 	  {
+ISR(USART1_RECEIVE_INTERRUPT){
+ 	  unsigned char data;
+ 	  unsigned char tmphead;
+ 	  
+ 	  data = UDR1;                                      //Read the received data.
+ 	  //calculate buffer index
+ 	  tmphead = (UART_RXHead + 1) & UART1_RX_BUFFER_MASK;
+ 	  UART_RXHead = tmphead;                           //store new index
+ 	  if (tmphead == UART_RXTail){
 // 		  /* ERROR! Receive buffer overflow */
-// 	  }
-// 	  UART_RxBuf[tmphead] = data;                      /* store received data in buffer */
-// }
+ 	  }
+ 	  UART1_RXBuffer[tmphead] = data;                  //store received data in buffer
+}
 
 ISR(USART1_TRANSMIT_INTERRUPT){
     //check if all data is transmitted.
@@ -103,4 +102,26 @@ void UART1_Println(const char* data){
     UART1_SendString(data);
     //Send new line break.
     UART1_SendString("\n\r");	
+}
+
+unsigned char UART1_ReceiveByte(void){
+    unsigned char tmptail;
+    
+    while (UART_RXHead == UART_RXTail);    //wait for incoming data.
+    
+    tmptail = (UART_RXTail + 1) & UART1_RX_BUFFER_MASK;     //calculate buffer index.
+    UART_RXTail = tmptail;      //store new index.
+    return UART1_RXBuffer[tmptail];     //return data.
+}
+
+uint8_t UART1_DataInReceiveBuffer(void){
+    return (UART_RXHead != UART_RXTail);  //return 0 (FALSE) if the receive buffer is empty.
+}
+
+void UART1_Readln(char* data){
+    while(UART1_DataInReceiveBuffer()){
+        *data = UART1_ReceiveByte();
+        data++;
+    }
+    UART1_RXBuffer[0] = '\0';        
 }

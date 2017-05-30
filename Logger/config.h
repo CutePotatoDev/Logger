@@ -18,11 +18,17 @@
 //UART Config.
 #define UART    //UART Module enable.
 #define BAUD 9600
-//#define UART_RX_BUFFER_SIZE  32
+#define UART1_RX_BUFFER_SIZE  32
 #define UART1_TX_BUFFER_SIZE  32
+#define UART1_ECHO_COMMANDS
 
 //Uptime clock.
 //#define UCLOCK
+
+// I2C
+#define I2C_SCL C,0
+#define I2C_SDA C,1
+#define I2C_SCL_CLOCK 100000L
 
 //ADC
 #define ADC_REFERENCE_AVCC
@@ -38,6 +44,8 @@
 #define SD_TRANSFER_FAIL A,6
 #define A5 A,5
  
+//RTC
+#define RTC_ADDRESS 0xD0
   
   
 #endif /* CONFIG_H_ */

@@ -7,6 +7,7 @@
 #ifndef UART_H_
 #define UART_H_
 
+#include "avr/io.h"
 #include "../config.h"
 
 #define USART1_DOUBLE_TRANSMISSION_SPEED		(1 << U2X1)
@@ -61,7 +62,11 @@ void UART1_SendByte(unsigned char data);
 void UART1_SendString(const char* data);
 //Send char array with new line break.
 void UART1_Println(const char* data);
-
-
+//Read one symbol from receive buffer.
+unsigned char UART1_ReceiveByte(void);
+//Check or there is something in receive buffer.
+uint8_t UART1_DataInReceiveBuffer(void);
+//Read all data from buffer.
+void UART1_Readln(char*);
 
 #endif /* UART_H_ */
