@@ -18,9 +18,14 @@
 //UART Config.
 #define UART    //UART Module enable.
 #define BAUD 9600
+// #define UART_EXCEPTION_EVENTS
+#define UART0_RX_BUFFER_SIZE  128
+#define UART0_TX_BUFFER_SIZE  32
+#define UART0_NMEA_EVENT
 #define UART1_RX_BUFFER_SIZE  32
-#define UART1_TX_BUFFER_SIZE  32
+#define UART1_TX_BUFFER_SIZE  64
 #define UART1_ECHO_COMMANDS
+
 
 //Uptime clock.
 //#define UCLOCK
@@ -48,4 +53,4 @@
 #define RTC_ADDRESS 0xD0
   
   
-#endif /* CONFIG_H_ */
+#endif // CONFIG_H_ 

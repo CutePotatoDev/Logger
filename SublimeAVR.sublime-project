@@ -1,0 +1,58 @@
+{
+	"build_systems":
+	[
+		{
+			"cmd": ["make"],
+			"env": {
+				"AVRDUDE_FLAGS": "-p m324pa -c USBAsp",
+				"CSTD": "c99",
+				"CXXSTD": "c++98",
+				"MMCU": "atmega324pa",
+				"TARGET": "Logger"
+			},
+			"name": "SublimeAVR",
+			"path": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin",
+			"selector": "source.c, source.c++",
+			"shell": true,
+			"syntax": "Packages/Makefile/Make Output.sublime-syntax",
+			"variants":
+			[
+				{
+					"cmd": ["make rebuild"],
+					"name": "Rebuild"
+				},
+				{
+					"cmd": ["make clean"],
+					"name": "Clean"
+				},
+				{
+					"cmd": ["make avrdude"],
+					"name": "Flash"
+				},
+				{
+					"cmd": ["make build_flash"],
+					"name": "Build-Flash"
+				}
+			],
+			"working_dir": "${project_path}"
+		}
+	],
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	],
+	"settings":
+	{
+		"ecc_common_flags":
+		[
+			"-std=c99",
+			"-Wall",
+			"-D__AVR_DEVICE_NAME__=atmega328pa",
+			"-D__AVR_ATmega324PA__",
+			"-I/usr/avr/include",
+			"-I/usr/lib/avr/include"
+		]
+	}
+}

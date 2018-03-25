@@ -1,0 +1,1242 @@
+Archive member included to satisfy reference by file (symbol)
+
+/usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_mulsi3.o)
+                              Other/build/./Logger/systems/sdcard/ff.o (__mulsi3)
+/usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_udivmodsi4.o)
+                              Other/build/./Logger/systems/sdcard/ff.o (__udivmodsi4)
+/usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_exit.o)
+                              /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o (exit)
+/usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_tablejump2.o)
+                              Other/build/./Logger/systems/sdcard/mmc_avr_spi.o (__tablejump2__)
+/usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_copy_data.o)
+                              Other/build/./Logger/main.o (__do_copy_data)
+/usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_clear_bss.o)
+                              Other/build/./Logger/systems/sdcard/ff.o (__do_clear_bss)
+/usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_umulhisi3.o)
+                              Other/build/./Logger/systems/sdcard/mmc_avr_spi.o (__umulhisi3)
+/usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_muluhisi3.o)
+                              Other/build/./Logger/systems/sdcard/ff.o (__muluhisi3)
+/usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(malloc.o)
+                              Other/build/./Logger/systems/rtc.o (malloc)
+/usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(realloc.o)
+                              Other/build/./Logger/databus/uart.o (realloc)
+/usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(memcpy.o)
+                              /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(realloc.o) (memcpy)
+/usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(strcat.o)
+                              Other/build/./Logger/systems/uclock.o (strcat)
+/usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(strcmp.o)
+                              Other/build/./Logger/main.o (strcmp)
+/usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(strcpy.o)
+                              Other/build/./Logger/systems/uclock.o (strcpy)
+/usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(strncpy.o)
+                              Other/build/./Logger/main.o (strncpy)
+/usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(ltoa_ncheck.o)
+                              Other/build/./Logger/systems/uclock.o (__ltoa_ncheck)
+/usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(ultoa_ncheck.o)
+                              /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(ltoa_ncheck.o) (__ultoa_common)
+/usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(sprintf.o)
+                              Other/build/./Logger/systems/rtc.o (sprintf)
+/usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+                              /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(sprintf.o) (vfprintf)
+/usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(strnlen_P.o)
+                              /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(vfprintf_std.o) (strnlen_P)
+/usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(strnlen.o)
+                              /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(vfprintf_std.o) (strnlen)
+/usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(strrev.o)
+                              /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(ultoa_ncheck.o) (strrev)
+/usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(fputc.o)
+                              /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(vfprintf_std.o) (fputc)
+/usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+                              /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(vfprintf_std.o) (__ultoa_invert)
+/usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_prologue.o)
+                              /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(realloc.o) (__prologue_saves__)
+/usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_epilogue.o)
+                              /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(realloc.o) (__epilogue_restores__)
+
+Allocating common symbols
+Common symbol       size              file
+
+__brkval            0x2               /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(malloc.o)
+filename            0xc               Other/build/./Logger/systems/sdcard.o
+milliseconds        0x4               Other/build/./Logger/systems/uclock.o
+uptime              0xc               Other/build/./Logger/systems/uclock.o
+time                0x6               Other/build/./Logger/systems/rtc.o
+str                 0x40              Other/build/./Logger/systems/sdcard.o
+__flp               0x2               /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(malloc.o)
+log_                0x100             Other/build/./Logger/systems/log.o
+
+Discarded input sections
+
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+ .text          0x0000000000000000        0x0 Other/build/./Logger/main.o
+ .data          0x0000000000000000        0x0 Other/build/./Logger/main.o
+ .bss           0x0000000000000000        0x0 Other/build/./Logger/main.o
+ .text.UART_Exception
+                0x0000000000000000        0x6 Other/build/./Logger/main.o
+ .text          0x0000000000000000        0x0 Other/build/./Logger/systems/sdcard/ff.o
+ .data          0x0000000000000000        0x0 Other/build/./Logger/systems/sdcard/ff.o
+ .bss           0x0000000000000000        0x0 Other/build/./Logger/systems/sdcard/ff.o
+ .text.get_ldnumber
+                0x0000000000000000       0x58 Other/build/./Logger/systems/sdcard/ff.o
+ .text.validate
+                0x0000000000000000       0x74 Other/build/./Logger/systems/sdcard/ff.o
+ .text.mem_cpy.part.0
+                0x0000000000000000       0x14 Other/build/./Logger/systems/sdcard/ff.o
+ .text.sync_window.part.3
+                0x0000000000000000       0xc8 Other/build/./Logger/systems/sdcard/ff.o
+ .text.move_window
+                0x0000000000000000       0x84 Other/build/./Logger/systems/sdcard/ff.o
+ .text.check_fs
+                0x0000000000000000       0xe8 Other/build/./Logger/systems/sdcard/ff.o
+ .text.find_volume
+                0x0000000000000000      0x7f8 Other/build/./Logger/systems/sdcard/ff.o
+ .text.put_fat.part.5
+                0x0000000000000000      0x21a Other/build/./Logger/systems/sdcard/ff.o
+ .text.get_fat.isra.6
+                0x0000000000000000      0x1c0 Other/build/./Logger/systems/sdcard/ff.o
+ .text.create_chain
+                0x0000000000000000      0x236 Other/build/./Logger/systems/sdcard/ff.o
+ .text.dir_next
+                0x0000000000000000      0x37a Other/build/./Logger/systems/sdcard/ff.o
+ .text.dir_sdi.constprop.8
+                0x0000000000000000      0x16c Other/build/./Logger/systems/sdcard/ff.o
+ .text.f_mount  0x0000000000000000       0x98 Other/build/./Logger/systems/sdcard/ff.o
+ .rodata.str1.1
+                0x0000000000000000        0xf Other/build/./Logger/systems/sdcard/ff.o
+ .text.f_open   0x0000000000000000      0x856 Other/build/./Logger/systems/sdcard/ff.o
+ .text.f_read   0x0000000000000000      0x33c Other/build/./Logger/systems/sdcard/ff.o
+ .text.f_write  0x0000000000000000      0x414 Other/build/./Logger/systems/sdcard/ff.o
+ .text.f_sync   0x0000000000000000      0x218 Other/build/./Logger/systems/sdcard/ff.o
+ .text.f_close  0x0000000000000000       0x4a Other/build/./Logger/systems/sdcard/ff.o
+ .text.f_lseek  0x0000000000000000      0x482 Other/build/./Logger/systems/sdcard/ff.o
+ .bss.Fsid      0x0000000000000000        0x2 Other/build/./Logger/systems/sdcard/ff.o
+ .bss.FatFs     0x0000000000000000        0x2 Other/build/./Logger/systems/sdcard/ff.o
+ .comment       0x0000000000000000       0x12 Other/build/./Logger/systems/sdcard/ff.o
+ .text          0x0000000000000000        0x0 Other/build/./Logger/systems/sdcard/mmc_avr_spi.o
+ .data          0x0000000000000000        0x0 Other/build/./Logger/systems/sdcard/mmc_avr_spi.o
+ .bss           0x0000000000000000        0x0 Other/build/./Logger/systems/sdcard/mmc_avr_spi.o
+ .text.wait_ready
+                0x0000000000000000       0x3a Other/build/./Logger/systems/sdcard/mmc_avr_spi.o
+ .text.select   0x0000000000000000       0x36 Other/build/./Logger/systems/sdcard/mmc_avr_spi.o
+ .text.send_cmd
+                0x0000000000000000       0xd6 Other/build/./Logger/systems/sdcard/mmc_avr_spi.o
+ .text.rcvr_datablock
+                0x0000000000000000       0x78 Other/build/./Logger/systems/sdcard/mmc_avr_spi.o
+ .text.xmit_datablock
+                0x0000000000000000       0x82 Other/build/./Logger/systems/sdcard/mmc_avr_spi.o
+ .text.mmc_disk_initialize
+                0x0000000000000000      0x17c Other/build/./Logger/systems/sdcard/mmc_avr_spi.o
+ .text.mmc_disk_status
+                0x0000000000000000        0x6 Other/build/./Logger/systems/sdcard/mmc_avr_spi.o
+ .text.mmc_disk_read
+                0x0000000000000000       0xba Other/build/./Logger/systems/sdcard/mmc_avr_spi.o
+ .text.mmc_disk_write
+                0x0000000000000000      0x120 Other/build/./Logger/systems/sdcard/mmc_avr_spi.o
+ .text.mmc_disk_ioctl
+                0x0000000000000000      0x5c4 Other/build/./Logger/systems/sdcard/mmc_avr_spi.o
+ .progmem.gcc_sw_table.mmc_disk_ioctl
+                0x0000000000000000       0x74 Other/build/./Logger/systems/sdcard/mmc_avr_spi.o
+ .bss.CardType  0x0000000000000000        0x1 Other/build/./Logger/systems/sdcard/mmc_avr_spi.o
+ .text          0x0000000000000000        0x0 Other/build/./Logger/systems/sdcard/diskio.o
+ .data          0x0000000000000000        0x0 Other/build/./Logger/systems/sdcard/diskio.o
+ .bss           0x0000000000000000        0x0 Other/build/./Logger/systems/sdcard/diskio.o
+ .text.disk_status
+                0x0000000000000000        0xc Other/build/./Logger/systems/sdcard/diskio.o
+ .text.disk_initialize
+                0x0000000000000000        0xc Other/build/./Logger/systems/sdcard/diskio.o
+ .text.disk_read
+                0x0000000000000000       0x24 Other/build/./Logger/systems/sdcard/diskio.o
+ .text.disk_write
+                0x0000000000000000       0x24 Other/build/./Logger/systems/sdcard/diskio.o
+ .text.disk_ioctl
+                0x0000000000000000       0x14 Other/build/./Logger/systems/sdcard/diskio.o
+ .text          0x0000000000000000        0x0 Other/build/./Logger/systems/uclock.o
+ .data          0x0000000000000000        0x0 Other/build/./Logger/systems/uclock.o
+ .bss           0x0000000000000000        0x0 Other/build/./Logger/systems/uclock.o
+ .text.UCLOCK_Millis
+                0x0000000000000000       0x16 Other/build/./Logger/systems/uclock.o
+ .text.NumberFormat
+                0x0000000000000000       0x6e Other/build/./Logger/systems/uclock.o
+ .text.UCLOCK_Uptime_Dellimiter
+                0x0000000000000000       0xfc Other/build/./Logger/systems/uclock.o
+ .rodata.str1.1
+                0x0000000000000000        0x2 Other/build/./Logger/systems/uclock.o
+ .text.UCLOCK_Uptime
+                0x0000000000000000        0x8 Other/build/./Logger/systems/uclock.o
+ .text          0x0000000000000000        0x0 Other/build/./Logger/systems/rtc.o
+ .data          0x0000000000000000        0x0 Other/build/./Logger/systems/rtc.o
+ .bss           0x0000000000000000        0x0 Other/build/./Logger/systems/rtc.o
+ .text.RTC_Set  0x0000000000000000       0x66 Other/build/./Logger/systems/rtc.o
+ .text.RTC_Start
+                0x0000000000000000       0x16 Other/build/./Logger/systems/rtc.o
+ .text.RTC_Stop
+                0x0000000000000000       0x16 Other/build/./Logger/systems/rtc.o
+ .text.RTC_Status
+                0x0000000000000000       0x38 Other/build/./Logger/systems/rtc.o
+ .text.RTC_GetTime
+                0x0000000000000000       0x98 Other/build/./Logger/systems/rtc.o
+ .rodata.str1.1
+                0x0000000000000000       0x1e Other/build/./Logger/systems/rtc.o
+ .text.RTC_GetTimeString
+                0x0000000000000000       0x66 Other/build/./Logger/systems/rtc.o
+ .comment       0x0000000000000000       0x12 Other/build/./Logger/systems/rtc.o
+ COMMON         0x0000000000000000        0x6 Other/build/./Logger/systems/rtc.o
+ .text          0x0000000000000000        0x0 Other/build/./Logger/systems/adc.o
+ .data          0x0000000000000000        0x0 Other/build/./Logger/systems/adc.o
+ .bss           0x0000000000000000        0x0 Other/build/./Logger/systems/adc.o
+ .text.ADC_Init
+                0x0000000000000000       0x1a Other/build/./Logger/systems/adc.o
+ .text.ADC_Read
+                0x0000000000000000       0x26 Other/build/./Logger/systems/adc.o
+ .comment       0x0000000000000000       0x12 Other/build/./Logger/systems/adc.o
+ .text          0x0000000000000000        0x0 Other/build/./Logger/systems/sdcard.o
+ .data          0x0000000000000000        0x0 Other/build/./Logger/systems/sdcard.o
+ .bss           0x0000000000000000        0x0 Other/build/./Logger/systems/sdcard.o
+ .rodata.str1.1
+                0x0000000000000000       0xe6 Other/build/./Logger/systems/sdcard.o
+ .text.SDCARD_Mount
+                0x0000000000000000       0xea Other/build/./Logger/systems/sdcard.o
+ .text.SDCARD_Reinit
+                0x0000000000000000       0x4a Other/build/./Logger/systems/sdcard.o
+ .text.SDCARD_Init
+                0x0000000000000000       0x10 Other/build/./Logger/systems/sdcard.o
+ .text.SDCARD_Write
+                0x0000000000000000      0x112 Other/build/./Logger/systems/sdcard.o
+ .bss.FATFS_Obj.2049
+                0x0000000000000000      0x22f Other/build/./Logger/systems/sdcard.o
+ .bss.err_code  0x0000000000000000        0x2 Other/build/./Logger/systems/sdcard.o
+ COMMON         0x0000000000000000       0x4c Other/build/./Logger/systems/sdcard.o
+ .text          0x0000000000000000        0x0 Other/build/./Logger/systems/timer.o
+ .data          0x0000000000000000        0x0 Other/build/./Logger/systems/timer.o
+ .bss           0x0000000000000000        0x0 Other/build/./Logger/systems/timer.o
+ .text.TIMER_0_Init
+                0x0000000000000000       0x34 Other/build/./Logger/systems/timer.o
+ .text.TIMER_2_Init
+                0x0000000000000000       0x44 Other/build/./Logger/systems/timer.o
+ .comment       0x0000000000000000       0x12 Other/build/./Logger/systems/timer.o
+ .text          0x0000000000000000        0x0 Other/build/./Logger/systems/log.o
+ .data          0x0000000000000000        0x0 Other/build/./Logger/systems/log.o
+ .bss           0x0000000000000000        0x0 Other/build/./Logger/systems/log.o
+ .rodata.str1.1
+                0x0000000000000000       0x18 Other/build/./Logger/systems/log.o
+ .text.LOG_Config
+                0x0000000000000000       0x52 Other/build/./Logger/systems/log.o
+ .text.LOG_Info
+                0x0000000000000000       0x52 Other/build/./Logger/systems/log.o
+ .text.LOG_Warning
+                0x0000000000000000       0x52 Other/build/./Logger/systems/log.o
+ .text.LOG_Error
+                0x0000000000000000       0x52 Other/build/./Logger/systems/log.o
+ .comment       0x0000000000000000       0x12 Other/build/./Logger/systems/log.o
+ COMMON         0x0000000000000000      0x100 Other/build/./Logger/systems/log.o
+ .text          0x0000000000000000        0x0 Other/build/./Logger/databus/i2c.o
+ .data          0x0000000000000000        0x0 Other/build/./Logger/databus/i2c.o
+ .bss           0x0000000000000000        0x0 Other/build/./Logger/databus/i2c.o
+ .text.I2C_Init
+                0x0000000000000000        0xc Other/build/./Logger/databus/i2c.o
+ .text.I2C_Start
+                0x0000000000000000       0x50 Other/build/./Logger/databus/i2c.o
+ .text.I2C_Write
+                0x0000000000000000       0x24 Other/build/./Logger/databus/i2c.o
+ .text.I2C_ReadACK
+                0x0000000000000000       0x14 Other/build/./Logger/databus/i2c.o
+ .text.I2C_ReadNACK
+                0x0000000000000000       0x14 Other/build/./Logger/databus/i2c.o
+ .text.I2C_Stop
+                0x0000000000000000       0x10 Other/build/./Logger/databus/i2c.o
+ .comment       0x0000000000000000       0x12 Other/build/./Logger/databus/i2c.o
+ .text          0x0000000000000000        0x0 Other/build/./Logger/databus/uart.o
+ .data          0x0000000000000000        0x0 Other/build/./Logger/databus/uart.o
+ .bss           0x0000000000000000        0x0 Other/build/./Logger/databus/uart.o
+ .text.UART0_ReceiveByte
+                0x0000000000000000       0x22 Other/build/./Logger/databus/uart.o
+ .text.UART0_DataInReceiveBuffer
+                0x0000000000000000       0x12 Other/build/./Logger/databus/uart.o
+ .text.UART0_Readln
+                0x0000000000000000       0x42 Other/build/./Logger/databus/uart.o
+ .text.UART1_SendByte
+                0x0000000000000000       0x2a Other/build/./Logger/databus/uart.o
+ .rodata.str1.1
+                0x0000000000000000        0x3 Other/build/./Logger/databus/uart.o
+ .text.UART1_Println
+                0x0000000000000000        0xc Other/build/./Logger/databus/uart.o
+ .text.UART1_ReceiveByte
+                0x0000000000000000       0x22 Other/build/./Logger/databus/uart.o
+ .text.UART1_DataInReceiveBuffer
+                0x0000000000000000       0x12 Other/build/./Logger/databus/uart.o
+ .text.UART1_Readln
+                0x0000000000000000       0x42 Other/build/./Logger/databus/uart.o
+ .bss.UART1_RXTail
+                0x0000000000000000        0x1 Other/build/./Logger/databus/uart.o
+ .text          0x0000000000000000        0x0 Other/build/./Logger/databus/spi.o
+ .data          0x0000000000000000        0x0 Other/build/./Logger/databus/spi.o
+ .bss           0x0000000000000000        0x0 Other/build/./Logger/databus/spi.o
+ .text.SPI_InitMaster
+                0x0000000000000000       0x16 Other/build/./Logger/databus/spi.o
+ .text.SPI_Send
+                0x0000000000000000        0xc Other/build/./Logger/databus/spi.o
+ .comment       0x0000000000000000       0x12 Other/build/./Logger/databus/spi.o
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_mulsi3.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_mulsi3.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_mulsi3.o)
+ .text.libgcc.mul
+                0x0000000000000000       0x20 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_mulsi3.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_mulsi3.o)
+ .text.libgcc   0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_mulsi3.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_mulsi3.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_mulsi3.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_mulsi3.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_mulsi3.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_udivmodsi4.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_udivmodsi4.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.div
+                0x0000000000000000       0x44 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc   0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_udivmodsi4.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_exit.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_exit.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_exit.o)
+ .text.libgcc   0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_exit.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_tablejump2.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_tablejump2.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_tablejump2.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_tablejump2.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_tablejump2.o)
+ .text.libgcc   0x0000000000000000        0xc /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_tablejump2.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_tablejump2.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_tablejump2.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_tablejump2.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_tablejump2.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_copy_data.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_copy_data.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc   0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_copy_data.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_clear_bss.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_clear_bss.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_clear_bss.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_umulhisi3.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_umulhisi3.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc.mul
+                0x0000000000000000       0x1e /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc   0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_umulhisi3.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_muluhisi3.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_muluhisi3.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_muluhisi3.o)
+ .text.libgcc.mul
+                0x0000000000000000       0x16 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_muluhisi3.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_muluhisi3.o)
+ .text.libgcc   0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_muluhisi3.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_muluhisi3.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_muluhisi3.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_muluhisi3.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_muluhisi3.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(malloc.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(malloc.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(realloc.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(realloc.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(realloc.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(memcpy.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(memcpy.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(memcpy.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(strcat.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(strcat.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(strcat.o)
+ .text.avr-libc
+                0x0000000000000000       0x16 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(strcat.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(strcmp.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(strcmp.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(strcmp.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(strcpy.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(strcpy.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(strcpy.o)
+ .text.avr-libc
+                0x0000000000000000        0xe /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(strcpy.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(strncpy.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(strncpy.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(strncpy.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(ltoa_ncheck.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(ltoa_ncheck.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(ltoa_ncheck.o)
+ .text.avr-libc
+                0x0000000000000000       0x1e /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(ltoa_ncheck.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(ultoa_ncheck.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(ultoa_ncheck.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(ultoa_ncheck.o)
+ .text.avr-libc
+                0x0000000000000000       0x44 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(ultoa_ncheck.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(sprintf.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(sprintf.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(sprintf.o)
+ .text.avr-libc
+                0x0000000000000000       0x46 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(sprintf.o)
+ .comment       0x0000000000000000       0x12 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(sprintf.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+ .text.avr-libc
+                0x0000000000000000      0x3a4 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+ .comment       0x0000000000000000       0x12 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(strnlen_P.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(strnlen_P.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(strnlen_P.o)
+ .text.avr-libc
+                0x0000000000000000       0x16 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(strnlen_P.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(strnlen.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(strnlen.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(strnlen.o)
+ .text.avr-libc
+                0x0000000000000000       0x16 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(strnlen.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(strrev.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(strrev.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(strrev.o)
+ .text.avr-libc
+                0x0000000000000000       0x20 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(strrev.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(fputc.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(fputc.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(fputc.o)
+ .text.avr-libc
+                0x0000000000000000       0x70 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(fputc.o)
+ .comment       0x0000000000000000       0x12 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(fputc.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+ .text.avr-libc
+                0x0000000000000000       0xbc /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_prologue.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_prologue.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_prologue.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_prologue.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_prologue.o)
+ .text.libgcc   0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_prologue.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_prologue.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_prologue.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_prologue.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_epilogue.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_epilogue.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_epilogue.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_epilogue.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_epilogue.o)
+ .text.libgcc   0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_epilogue.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_epilogue.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_epilogue.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_epilogue.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x0000000000000000 0x0000000000020000 xr
+data             0x0000000000800060 0x000000000000ffa0 rw !x
+eeprom           0x0000000000810000 0x0000000000010000 rw !x
+fuse             0x0000000000820000 0x0000000000000400 rw !x
+lock             0x0000000000830000 0x0000000000000400 rw !x
+signature        0x0000000000840000 0x0000000000000400 rw !x
+user_signatures  0x0000000000850000 0x0000000000000400 rw !x
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+LOAD Other/build/./Logger/main.o
+LOAD Other/build/./Logger/systems/sdcard/ff.o
+LOAD Other/build/./Logger/systems/sdcard/mmc_avr_spi.o
+LOAD Other/build/./Logger/systems/sdcard/diskio.o
+LOAD Other/build/./Logger/systems/uclock.o
+LOAD Other/build/./Logger/systems/rtc.o
+LOAD Other/build/./Logger/systems/adc.o
+LOAD Other/build/./Logger/systems/sdcard.o
+LOAD Other/build/./Logger/systems/timer.o
+LOAD Other/build/./Logger/systems/log.o
+LOAD Other/build/./Logger/databus/i2c.o
+LOAD Other/build/./Logger/databus/uart.o
+LOAD Other/build/./Logger/databus/spi.o
+LOAD /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libm.a
+START GROUP
+LOAD /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a
+LOAD /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libm.a
+LOAD /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a
+LOAD /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libatmega324pa.a
+END GROUP
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x0000000000000000      0x910
+ *(.vectors)
+ .vectors       0x0000000000000000       0x7c /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+                0x0000000000000000                __vectors
+                0x0000000000000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+                0x000000000000007c                . = ALIGN (0x2)
+                0x000000000000007c                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x000000000000007c        0x0 linker stubs
+ *(.trampolines*)
+                0x000000000000007c                __trampolines_end = .
+ *(.progmem*)
+                0x000000000000007c                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x000000000000007c                __ctors_start = .
+ *(.ctors)
+                0x000000000000007c                __ctors_end = .
+                0x000000000000007c                __dtors_start = .
+ *(.dtors)
+                0x000000000000007c                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x000000000000007c        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+                0x000000000000007c                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x000000000000007c        0xc /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x0000000000000088       0x16 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_copy_data.o)
+                0x0000000000000088                __do_copy_data
+ .init4         0x000000000000009e       0x10 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_clear_bss.o)
+                0x000000000000009e                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000000000000ae        0x8 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+ *(.init9)
+ *(.text)
+ .text          0x00000000000000b6        0x4 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+                0x00000000000000b6                __vector_22
+                0x00000000000000b6                __vector_1
+                0x00000000000000b6                __vector_24
+                0x00000000000000b6                __vector_12
+                0x00000000000000b6                __bad_interrupt
+                0x00000000000000b6                __vector_6
+                0x00000000000000b6                __vector_3
+                0x00000000000000b6                __vector_23
+                0x00000000000000b6                __vector_30
+                0x00000000000000b6                __vector_25
+                0x00000000000000b6                __vector_11
+                0x00000000000000b6                __vector_13
+                0x00000000000000b6                __vector_17
+                0x00000000000000b6                __vector_19
+                0x00000000000000b6                __vector_7
+                0x00000000000000b6                __vector_27
+                0x00000000000000b6                __vector_5
+                0x00000000000000b6                __vector_4
+                0x00000000000000b6                __vector_2
+                0x00000000000000b6                __vector_15
+                0x00000000000000b6                __vector_8
+                0x00000000000000b6                __vector_26
+                0x00000000000000b6                __vector_14
+                0x00000000000000b6                __vector_10
+                0x00000000000000b6                __vector_18
+                0x00000000000000ba                . = ALIGN (0x2)
+ *(.text.*)
+ .text.UART0_NMEAEvent
+                0x00000000000000ba       0x72 Other/build/./Logger/main.o
+                0x00000000000000ba                UART0_NMEAEvent
+ .text.startup.main
+                0x000000000000012c       0x54 Other/build/./Logger/main.o
+                0x000000000000012c                main
+ .text.mmc_disk_timerproc
+                0x0000000000000180       0x28 Other/build/./Logger/systems/sdcard/mmc_avr_spi.o
+                0x0000000000000180                mmc_disk_timerproc
+ .text.disk_timerproc
+                0x00000000000001a8        0x4 Other/build/./Logger/systems/sdcard/diskio.o
+                0x00000000000001a8                disk_timerproc
+ .text.UCLOCK_Init
+                0x00000000000001ac       0x14 Other/build/./Logger/systems/uclock.o
+                0x00000000000001ac                UCLOCK_Init
+ .text.__vector_16
+                0x00000000000001c0       0x4a Other/build/./Logger/systems/uclock.o
+                0x00000000000001c0                __vector_16
+ .text.__vector_9
+                0x000000000000020a       0x48 Other/build/./Logger/systems/sdcard.o
+                0x000000000000020a                __vector_9
+ .text.UART0_Init
+                0x0000000000000252       0x2c Other/build/./Logger/databus/uart.o
+                0x0000000000000252                UART0_Init
+ .text.__vector_20
+                0x000000000000027e       0xe8 Other/build/./Logger/databus/uart.o
+                0x000000000000027e                __vector_20
+ .text.__vector_21
+                0x0000000000000366       0x14 Other/build/./Logger/databus/uart.o
+                0x0000000000000366                __vector_21
+ .text.UART1_Init
+                0x000000000000037a       0x2c Other/build/./Logger/databus/uart.o
+                0x000000000000037a                UART1_Init
+ .text.__vector_28
+                0x00000000000003a6       0x38 Other/build/./Logger/databus/uart.o
+                0x00000000000003a6                __vector_28
+ .text.__vector_29
+                0x00000000000003de       0x54 Other/build/./Logger/databus/uart.o
+                0x00000000000003de                __vector_29
+ .text.UART1_SendString
+                0x0000000000000432       0x3c Other/build/./Logger/databus/uart.o
+                0x0000000000000432                UART1_SendString
+ .text.avr-libc
+                0x000000000000046e      0x25a /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(malloc.o)
+                0x000000000000046e                malloc
+                0x0000000000000598                free
+ .text.avr-libc
+                0x00000000000006c8      0x194 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(realloc.o)
+                0x00000000000006c8                realloc
+ .text.avr-libc
+                0x000000000000085c       0x12 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(memcpy.o)
+                0x000000000000085c                memcpy
+ .text.avr-libc
+                0x000000000000086e       0x12 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(strcmp.o)
+                0x000000000000086e                strcmp
+ .text.avr-libc
+                0x0000000000000880       0x1e /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(strncpy.o)
+                0x0000000000000880                strncpy
+ .text.libgcc.prologue
+                0x000000000000089e       0x38 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_prologue.o)
+                0x000000000000089e                __prologue_saves__
+ .text.libgcc.prologue
+                0x00000000000008d6       0x36 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_epilogue.o)
+                0x00000000000008d6                __epilogue_restores__
+                0x000000000000090c                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x000000000000090c        0x0 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_exit.o)
+                0x000000000000090c                exit
+                0x000000000000090c                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x000000000000090c        0x4 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_exit.o)
+ *(.fini0)
+                0x0000000000000910                _etext = .
+
+.data           0x0000000000800100       0x16 load address 0x0000000000000910
+                0x0000000000800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x0000000000800100        0x6 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(malloc.o)
+                0x0000000000800100                __malloc_heap_end
+                0x0000000000800102                __malloc_heap_start
+                0x0000000000800104                __malloc_margin
+ *(.data*)
+ .data.Stat     0x0000000000800106        0x1 Other/build/./Logger/systems/sdcard/mmc_avr_spi.o
+ *(.rodata)
+ *(.rodata*)
+ .rodata.str1.1
+                0x0000000000800107        0xe Other/build/./Logger/main.o
+ *(.gnu.linkonce.d*)
+                0x0000000000800116                . = ALIGN (0x2)
+ *fill*         0x0000000000800115        0x1 
+                0x0000000000800116                _edata = .
+                0x0000000000800116                PROVIDE (__data_end, .)
+
+.bss            0x0000000000800116       0xfd
+                0x0000000000800116                PROVIDE (__bss_start, .)
+ *(.bss)
+ *(.bss*)
+ .bss.Timer2    0x0000000000800116        0x1 Other/build/./Logger/systems/sdcard/mmc_avr_spi.o
+ .bss.Timer1    0x0000000000800117        0x1 Other/build/./Logger/systems/sdcard/mmc_avr_spi.o
+ .bss.UART1_TXTail
+                0x0000000000800118        0x1 Other/build/./Logger/databus/uart.o
+ .bss.UART1_TXHead
+                0x0000000000800119        0x1 Other/build/./Logger/databus/uart.o
+ .bss.UART1_TXBuffer
+                0x000000000080011a       0x40 Other/build/./Logger/databus/uart.o
+ .bss.UART1_RXHead
+                0x000000000080015a        0x1 Other/build/./Logger/databus/uart.o
+ .bss.UART1_RXBuffer
+                0x000000000080015b       0x20 Other/build/./Logger/databus/uart.o
+ .bss.UART0_TXTail
+                0x000000000080017b        0x1 Other/build/./Logger/databus/uart.o
+ .bss.UART0_TXHead
+                0x000000000080017c        0x1 Other/build/./Logger/databus/uart.o
+ .bss.UART0_RXTail
+                0x000000000080017d        0x1 Other/build/./Logger/databus/uart.o
+ .bss.UART0_RXHead
+                0x000000000080017e        0x1 Other/build/./Logger/databus/uart.o
+ .bss.UART0_RXBuffer
+                0x000000000080017f       0x80 Other/build/./Logger/databus/uart.o
+ *(COMMON)
+ COMMON         0x00000000008001ff       0x10 Other/build/./Logger/systems/uclock.o
+                0x00000000008001ff                milliseconds
+                0x0000000000800203                uptime
+ COMMON         0x000000000080020f        0x4 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(malloc.o)
+                0x000000000080020f                __brkval
+                0x0000000000800211                __flp
+                0x0000000000800213                PROVIDE (__bss_end, .)
+                0x0000000000000910                __data_load_start = LOADADDR (.data)
+                0x0000000000000926                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x0000000000800213        0x0
+                0x0000000000800213                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x0000000000800213                PROVIDE (__noinit_end, .)
+                0x0000000000800213                _end = .
+                0x0000000000800213                PROVIDE (__heap_start, .)
+
+.eeprom         0x0000000000810000        0x0
+ *(.eeprom*)
+                0x0000000000810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x11
+ *(.comment)
+ .comment       0x0000000000000000       0x11 Other/build/./Logger/main.o
+                                         0x12 (size before relaxing)
+ .comment       0x0000000000000011       0x12 Other/build/./Logger/systems/sdcard/mmc_avr_spi.o
+ .comment       0x0000000000000011       0x12 Other/build/./Logger/systems/sdcard/diskio.o
+ .comment       0x0000000000000011       0x12 Other/build/./Logger/systems/uclock.o
+ .comment       0x0000000000000011       0x12 Other/build/./Logger/systems/sdcard.o
+ .comment       0x0000000000000011       0x12 Other/build/./Logger/databus/uart.o
+ .comment       0x0000000000000011       0x12 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(malloc.o)
+ .comment       0x0000000000000011       0x12 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(realloc.o)
+
+.note.gnu.avr.deviceinfo
+                0x0000000000000000       0x40
+ .note.gnu.avr.deviceinfo
+                0x0000000000000000       0x40 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(Other/build/Logger.elf elf32-avr)
+LOAD linker stubs
+
+Cross Reference Table
+
+Symbol                                            File
+ADC_Init                                          Other/build/./Logger/systems/adc.o
+ADC_Read                                          Other/build/./Logger/systems/adc.o
+I2C_Init                                          Other/build/./Logger/databus/i2c.o
+I2C_ReadACK                                       Other/build/./Logger/databus/i2c.o
+                                                  Other/build/./Logger/systems/rtc.o
+I2C_ReadNACK                                      Other/build/./Logger/databus/i2c.o
+                                                  Other/build/./Logger/systems/rtc.o
+I2C_Start                                         Other/build/./Logger/databus/i2c.o
+                                                  Other/build/./Logger/systems/rtc.o
+I2C_Stop                                          Other/build/./Logger/databus/i2c.o
+                                                  Other/build/./Logger/systems/rtc.o
+I2C_Write                                         Other/build/./Logger/databus/i2c.o
+                                                  Other/build/./Logger/systems/rtc.o
+LOG_Config                                        Other/build/./Logger/systems/log.o
+LOG_Error                                         Other/build/./Logger/systems/log.o
+                                                  Other/build/./Logger/systems/sdcard.o
+                                                  Other/build/./Logger/main.o
+LOG_Info                                          Other/build/./Logger/systems/log.o
+                                                  Other/build/./Logger/systems/sdcard.o
+LOG_Warning                                       Other/build/./Logger/systems/log.o
+NumberFormat                                      Other/build/./Logger/systems/uclock.o
+RTC_GetTime                                       Other/build/./Logger/systems/rtc.o
+RTC_GetTimeString                                 Other/build/./Logger/systems/rtc.o
+RTC_Set                                           Other/build/./Logger/systems/rtc.o
+RTC_Start                                         Other/build/./Logger/systems/rtc.o
+RTC_Status                                        Other/build/./Logger/systems/rtc.o
+RTC_Stop                                          Other/build/./Logger/systems/rtc.o
+SDCARD_Init                                       Other/build/./Logger/systems/sdcard.o
+SDCARD_Mount                                      Other/build/./Logger/systems/sdcard.o
+SDCARD_Reinit                                     Other/build/./Logger/systems/sdcard.o
+SDCARD_Write                                      Other/build/./Logger/systems/sdcard.o
+SPI_InitMaster                                    Other/build/./Logger/databus/spi.o
+SPI_Send                                          Other/build/./Logger/databus/spi.o
+                                                  Other/build/./Logger/systems/sdcard/mmc_avr_spi.o
+TIMER_0_Init                                      Other/build/./Logger/systems/timer.o
+TIMER_2_Init                                      Other/build/./Logger/systems/timer.o
+                                                  Other/build/./Logger/systems/sdcard.o
+UART0_DataInReceiveBuffer                         Other/build/./Logger/databus/uart.o
+UART0_Init                                        Other/build/./Logger/databus/uart.o
+                                                  Other/build/./Logger/main.o
+UART0_NMEAEvent                                   Other/build/./Logger/main.o
+                                                  Other/build/./Logger/databus/uart.o
+UART0_Readln                                      Other/build/./Logger/databus/uart.o
+UART0_ReceiveByte                                 Other/build/./Logger/databus/uart.o
+UART1_DataInReceiveBuffer                         Other/build/./Logger/databus/uart.o
+UART1_Init                                        Other/build/./Logger/databus/uart.o
+                                                  Other/build/./Logger/main.o
+UART1_Println                                     Other/build/./Logger/databus/uart.o
+                                                  Other/build/./Logger/systems/log.o
+UART1_Readln                                      Other/build/./Logger/databus/uart.o
+UART1_ReceiveByte                                 Other/build/./Logger/databus/uart.o
+UART1_SendByte                                    Other/build/./Logger/databus/uart.o
+UART1_SendString                                  Other/build/./Logger/databus/uart.o
+                                                  Other/build/./Logger/main.o
+UART_Exception                                    Other/build/./Logger/main.o
+UCLOCK_Init                                       Other/build/./Logger/systems/uclock.o
+                                                  Other/build/./Logger/main.o
+UCLOCK_Millis                                     Other/build/./Logger/systems/uclock.o
+UCLOCK_Uptime                                     Other/build/./Logger/systems/uclock.o
+                                                  Other/build/./Logger/systems/log.o
+UCLOCK_Uptime_Dellimiter                          Other/build/./Logger/systems/uclock.o
+                                                  Other/build/./Logger/systems/sdcard.o
+__bad_interrupt                                   /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+__brkval                                          /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(malloc.o)
+                                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(realloc.o)
+__bss_end                                         /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_clear_bss.o)
+__bss_start                                       /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_clear_bss.o)
+__data_end                                        /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_copy_data.o)
+__data_load_start                                 /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_copy_data.o)
+__data_start                                      /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_copy_data.o)
+__do_clear_bss                                    /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_clear_bss.o)
+                                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(malloc.o)
+                                                  Other/build/./Logger/databus/uart.o
+                                                  Other/build/./Logger/systems/log.o
+                                                  Other/build/./Logger/systems/sdcard.o
+                                                  Other/build/./Logger/systems/rtc.o
+                                                  Other/build/./Logger/systems/uclock.o
+                                                  Other/build/./Logger/systems/sdcard/mmc_avr_spi.o
+                                                  Other/build/./Logger/systems/sdcard/ff.o
+__do_copy_data                                    /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_copy_data.o)
+                                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(malloc.o)
+                                                  Other/build/./Logger/databus/uart.o
+                                                  Other/build/./Logger/systems/log.o
+                                                  Other/build/./Logger/systems/sdcard.o
+                                                  Other/build/./Logger/systems/rtc.o
+                                                  Other/build/./Logger/systems/uclock.o
+                                                  Other/build/./Logger/systems/sdcard/mmc_avr_spi.o
+                                                  Other/build/./Logger/systems/sdcard/ff.o
+                                                  Other/build/./Logger/main.o
+__epilogue_restores__                             /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_epilogue.o)
+                                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+                                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(sprintf.o)
+                                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(realloc.o)
+__flp                                             /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(malloc.o)
+                                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(realloc.o)
+__heap_end                                        /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+                                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(malloc.o)
+__heap_start                                      /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(malloc.o)
+__init                                            /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+__ltoa_ncheck                                     /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(ltoa_ncheck.o)
+                                                  Other/build/./Logger/systems/uclock.o
+__malloc_heap_end                                 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(malloc.o)
+                                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(realloc.o)
+__malloc_heap_start                               /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(malloc.o)
+__malloc_margin                                   /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(malloc.o)
+                                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(realloc.o)
+__mulsi3                                          /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_mulsi3.o)
+                                                  Other/build/./Logger/systems/sdcard/ff.o
+__muluhisi3                                       /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_muluhisi3.o)
+                                                  /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_mulsi3.o)
+                                                  Other/build/./Logger/systems/sdcard/ff.o
+__prologue_saves__                                /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_prologue.o)
+                                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+                                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(sprintf.o)
+                                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(realloc.o)
+__stack                                           /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+__tablejump2__                                    /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_tablejump2.o)
+                                                  Other/build/./Logger/systems/sdcard/mmc_avr_spi.o
+__udivmodsi4                                      /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_udivmodsi4.o)
+                                                  Other/build/./Logger/systems/uclock.o
+                                                  Other/build/./Logger/systems/sdcard/ff.o
+__ultoa_common                                    /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(ultoa_ncheck.o)
+                                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(ltoa_ncheck.o)
+__ultoa_invert                                    /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+                                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+__ultoa_ncheck                                    /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(ultoa_ncheck.o)
+__umulhisi3                                       /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_umulhisi3.o)
+                                                  /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_muluhisi3.o)
+                                                  Other/build/./Logger/systems/sdcard/mmc_avr_spi.o
+__vector_1                                        /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+__vector_10                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+__vector_11                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+__vector_12                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+__vector_13                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+__vector_14                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+__vector_15                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+__vector_16                                       Other/build/./Logger/systems/uclock.o
+                                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+__vector_17                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+__vector_18                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+__vector_19                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+__vector_2                                        /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+__vector_20                                       Other/build/./Logger/databus/uart.o
+                                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+__vector_21                                       Other/build/./Logger/databus/uart.o
+                                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+__vector_22                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+__vector_23                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+__vector_24                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+__vector_25                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+__vector_26                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+__vector_27                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+__vector_28                                       Other/build/./Logger/databus/uart.o
+                                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+__vector_29                                       Other/build/./Logger/databus/uart.o
+                                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+__vector_3                                        /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+__vector_30                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+__vector_4                                        /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+__vector_5                                        /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+__vector_6                                        /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+__vector_7                                        /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+__vector_8                                        /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+__vector_9                                        Other/build/./Logger/systems/sdcard.o
+                                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+__vector_default                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+__vectors                                         /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+_exit                                             /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_exit.o)
+disk_initialize                                   Other/build/./Logger/systems/sdcard/diskio.o
+                                                  Other/build/./Logger/systems/sdcard.o
+                                                  Other/build/./Logger/systems/sdcard/ff.o
+disk_ioctl                                        Other/build/./Logger/systems/sdcard/diskio.o
+                                                  Other/build/./Logger/systems/sdcard/ff.o
+disk_read                                         Other/build/./Logger/systems/sdcard/diskio.o
+                                                  Other/build/./Logger/systems/sdcard/ff.o
+disk_status                                       Other/build/./Logger/systems/sdcard/diskio.o
+                                                  Other/build/./Logger/systems/sdcard/ff.o
+disk_timerproc                                    Other/build/./Logger/systems/sdcard/diskio.o
+                                                  Other/build/./Logger/systems/sdcard.o
+disk_write                                        Other/build/./Logger/systems/sdcard/diskio.o
+                                                  Other/build/./Logger/systems/sdcard/ff.o
+exit                                              /usr/lib/gcc/avr/4.9.2/avr5/libgcc.a(_exit.o)
+                                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+f_close                                           Other/build/./Logger/systems/sdcard/ff.o
+                                                  Other/build/./Logger/systems/sdcard.o
+f_lseek                                           Other/build/./Logger/systems/sdcard/ff.o
+f_mount                                           Other/build/./Logger/systems/sdcard/ff.o
+                                                  Other/build/./Logger/systems/sdcard.o
+f_open                                            Other/build/./Logger/systems/sdcard/ff.o
+                                                  Other/build/./Logger/systems/sdcard.o
+f_read                                            Other/build/./Logger/systems/sdcard/ff.o
+f_sync                                            Other/build/./Logger/systems/sdcard/ff.o
+f_write                                           Other/build/./Logger/systems/sdcard/ff.o
+                                                  Other/build/./Logger/systems/sdcard.o
+filename                                          Other/build/./Logger/systems/sdcard.o
+fputc                                             /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(fputc.o)
+                                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+free                                              /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(malloc.o)
+                                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(realloc.o)
+                                                  Other/build/./Logger/databus/uart.o
+log_                                              Other/build/./Logger/systems/log.o
+main                                              Other/build/./Logger/main.o
+                                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/crtatmega324pa.o
+malloc                                            /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(malloc.o)
+                                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(realloc.o)
+                                                  Other/build/./Logger/databus/uart.o
+                                                  Other/build/./Logger/systems/rtc.o
+memcpy                                            /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(memcpy.o)
+                                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(realloc.o)
+milliseconds                                      Other/build/./Logger/systems/uclock.o
+mmc_disk_initialize                               Other/build/./Logger/systems/sdcard/mmc_avr_spi.o
+                                                  Other/build/./Logger/systems/sdcard/diskio.o
+mmc_disk_ioctl                                    Other/build/./Logger/systems/sdcard/mmc_avr_spi.o
+                                                  Other/build/./Logger/systems/sdcard/diskio.o
+mmc_disk_read                                     Other/build/./Logger/systems/sdcard/mmc_avr_spi.o
+                                                  Other/build/./Logger/systems/sdcard/diskio.o
+mmc_disk_status                                   Other/build/./Logger/systems/sdcard/mmc_avr_spi.o
+                                                  Other/build/./Logger/systems/sdcard/diskio.o
+mmc_disk_timerproc                                Other/build/./Logger/systems/sdcard/mmc_avr_spi.o
+                                                  Other/build/./Logger/systems/sdcard/diskio.o
+mmc_disk_write                                    Other/build/./Logger/systems/sdcard/mmc_avr_spi.o
+                                                  Other/build/./Logger/systems/sdcard/diskio.o
+realloc                                           /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(realloc.o)
+                                                  Other/build/./Logger/databus/uart.o
+sprintf                                           /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(sprintf.o)
+                                                  Other/build/./Logger/systems/sdcard.o
+                                                  Other/build/./Logger/systems/rtc.o
+str                                               Other/build/./Logger/systems/sdcard.o
+strcat                                            /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(strcat.o)
+                                                  Other/build/./Logger/systems/uclock.o
+strcmp                                            /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(strcmp.o)
+                                                  Other/build/./Logger/main.o
+strcpy                                            /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(strcpy.o)
+                                                  Other/build/./Logger/systems/log.o
+                                                  Other/build/./Logger/systems/uclock.o
+strncpy                                           /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(strncpy.o)
+                                                  Other/build/./Logger/main.o
+strnlen                                           /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(strnlen.o)
+                                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+strnlen_P                                         /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(strnlen_P.o)
+                                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+strrev                                            /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(strrev.o)
+                                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(ultoa_ncheck.o)
+time                                              Other/build/./Logger/systems/rtc.o
+uptime                                            Other/build/./Logger/systems/uclock.o
+vfprintf                                          /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+                                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr5/libc.a(sprintf.o)

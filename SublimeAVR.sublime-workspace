@@ -1,0 +1,686 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"UART0",
+				"UART0_ReceiveByte\tunsigned char UART0_ReceiveByte()"
+			],
+			[
+				"ob",
+				"OBJECTS"
+			],
+			[
+				"L",
+				"Logger"
+			],
+			[
+				"M",
+				"Mutex\tstruct ʈ"
+			],
+			[
+				"c",
+				"Close\terror ƒ"
+			],
+			[
+				"is",
+				"IsPermission\tbool ƒ"
+			],
+			[
+				"PR",
+				"Println\tn int, err error ƒ"
+			],
+			[
+				"P",
+				"Println\tn int, err error ƒ"
+			],
+			[
+				"Ope",
+				"Open\t*os.File, error ƒ"
+			],
+			[
+				"O_RD",
+				"O_RDWR\t Ɩ"
+			],
+			[
+				"g",
+				"MustGetLogger\t*logging.Logger ƒ"
+			],
+			[
+				"main",
+				"func main\tfunc main {...} ʂ"
+			],
+			[
+				"fun",
+				"func\tfunc {...} ʂ"
+			],
+			[
+				"form",
+				"formatter\tlogging.Backend ν"
+			],
+			[
+				"fo",
+				"format\tlogging.Formatter ν"
+			],
+			[
+				"st",
+				"stderr\t*logging.LogBackend ν"
+			],
+			[
+				"back",
+				"NewBackendFormatter\tlogging.Backend ƒ"
+			],
+			[
+				"ST",
+				"Stderr\t*os.File ν"
+			],
+			[
+				"log",
+				"logging\t package ρ"
+			],
+			[
+				"pri",
+				"Println\tn int, err error ƒ"
+			],
+			[
+				"p",
+				"Println\tn int, err error ƒ"
+			],
+			[
+				"im",
+				"import\timport (...) ʂ"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "SublimeAVR.sublime-project",
+			"settings":
+			{
+				"buffer_size": 1033,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Logger/main.c",
+			"settings":
+			{
+				"buffer_size": 4443,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Logger/databus/uart.c",
+			"settings":
+			{
+				"buffer_size": 6413,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Logger/config.h",
+			"settings":
+			{
+				"buffer_size": 789,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Logger/databus/uart.h",
+			"settings":
+			{
+				"buffer_size": 2860,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/usr/lib/avr/include/avr/interrupt.h",
+			"settings":
+			{
+				"buffer_size": 11346,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "SublimeAVR",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"SublimeAVR",
+					""
+				],
+				[
+					"SublimeAVR",
+					"Rebuild"
+				],
+				[
+					"SublimeAVR",
+					"Clean"
+				],
+				[
+					"SublimeAVR",
+					"Debug"
+				],
+				[
+					"SublimeAVR",
+					"Run"
+				]
+			],
+			[
+				"SublimeAVR",
+				""
+			]
+		],
+		[
+			[
+				[
+					"SublimeAVR",
+					""
+				],
+				[
+					"SublimeAVR",
+					"Rebuild"
+				],
+				[
+					"SublimeAVR",
+					"Clean"
+				],
+				[
+					"SublimeAVR",
+					"Flash"
+				]
+			],
+			[
+				"SublimeAVR",
+				"Flash"
+			]
+		],
+		[
+			[
+				[
+					"SublimeAVR",
+					""
+				],
+				[
+					"SublimeAVR",
+					"Rebuild"
+				],
+				[
+					"SublimeAVR",
+					"Clean"
+				],
+				[
+					"SublimeAVR",
+					"Flash"
+				],
+				[
+					"SublimeAVR",
+					"Build-Flash"
+				]
+			],
+			[
+				"SublimeAVR",
+				"Build-Flash"
+			]
+		],
+		[
+			[
+				[
+					"SublimeAVR",
+					""
+				],
+				[
+					"SublimeAVR",
+					"Rebuild"
+				],
+				[
+					"SublimeAVR",
+					"Clean"
+				],
+				[
+					"SublimeAVR",
+					"Run"
+				]
+			],
+			[
+				"SublimeAVR",
+				"Rebuild"
+			]
+		]
+	],
+	"build_varint": "Build-Flash",
+	"command_palette":
+	{
+		"height": 154.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"markdo",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"INSTALL",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 479.0
+	},
+	"console":
+	{
+		"height": 130.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/sv/Documents/Projects/Logger",
+		"/home/sv/Documents/Projects/Logger/Logger",
+		"/home/sv/Documents/Projects/Logger/Logger/databus"
+	],
+	"file_history":
+	[
+		"/home/sv/Documents/Projects/Logger/Makefile",
+		"/home/sv/Documents/Projects/Logger/Logger/config.h",
+		"/home/sv/Documents/Projects/Logger/Logger/databus/uart.h",
+		"/home/sv/Documents/Projects/Logger/Logger/databus/uart.c",
+		"/home/sv/Documents/Projects/Logger/Logger/systems/sdcard.h",
+		"/home/sv/Documents/Projects/Logger/Logger/main.c",
+		"/home/sv/Documents/Projects/Logger/Logger/systems/sdcard/diskio.h",
+		"/home/sv/Documents/Projects/Logger/Logger/systems/sdcard.c",
+		"/home/sv/Documents/Projects/Logger/Logger.map",
+		"/home/sv/.config/sublime-text-3/Packages/User/GoSublime.sublime-settings",
+		"/home/sv/Documents/Projects/Go/AntiGravityCore/src/core/logger.go",
+		"/home/sv/Documents/Projects/Go/AntiGravityCore/src/mystuff/estlib/test.go",
+		"/home/sv/Documents/Projects/Go/AntiGravityCore/src/main.go",
+		"/home/sv/Documents/Projects/Go/AntiGravityCore/src/mystuff/main.go",
+		"/home/sv/Documents/Projects/Go/AntiGravityCore/src/estlib/test.go",
+		"/home/sv/Documents/Projects/Go/AntiGravityCore/src/testlib/test.go",
+		"/home/sv/Documents/Projects/Go/AntiGravityCore/testlib/test.go",
+		"/home/sv/Documents/Projects/Go/AntiGravityCore/main.go",
+		"/home/sv/Documents/Projects/Go/AntiGravityCore/untitled.sublime-project",
+		"/home/sv/test.go",
+		"/home/sv/.config/sublime-text-3/Packages/GoSublime/Default (Linux).sublime-keymap",
+		"/home/sv/.config/sublime-text-3/Packages/GoSublime/GoSublime.sublime-settings",
+		"/home/sv/Documents/Projects/AntiGravityCore/dev/configuration.conf",
+		"/home/sv/.config/sublime-text-3/Packages/Markdown Preview/MarkdownPreview.sublime-settings",
+		"/home/sv/.config/sublime-text-3/Packages/GoSublime/USAGE.md",
+		"/home/sv/.config/sublime-text-3/Packages/User/MarkdownPreview.sublime-settings",
+		"/home/sv/.config/sublime-text-3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/home/sv/Documents/Testas/Testas.ino",
+		"/home/sv/SerialPortPlotter-Source/helpwindow.cpp",
+		"/home/sv/Downloads/main.cpp"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 98.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"UART_TXBuffer",
+			"map",
+			"LD",
+			"OBJECTS",
+			"stdo",
+			"setti",
+			"CFLAGS",
+			"CC"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "SublimeAVR.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1033,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								729,
+								729
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 82.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Logger/main.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4443,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4355,
+								4342
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/C++/C.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1612.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Logger/databus/uart.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6413,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1975,
+								1975
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/C++/C.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 876.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Logger/config.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 789,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								180,
+								180
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Logger/databus/uart.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2860,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/usr/lib/avr/include/avr/interrupt.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11346,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4996,
+								4996
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": false,
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1759.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.9o:///home/sv/Documents/Projects/Logger":
+	{
+		"height": 102.0
+	},
+	"output.9o:///home/sv/Documents/Projects/Logger/Logger":
+	{
+		"height": 102.0
+	},
+	"output.GoSublime-main-output":
+	{
+		"height": 102.0
+	},
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 178.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "SublimeAVR",
+	"project": "SublimeAVR.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/.config/sublime-text-3/Packages/Markdown Preview/MarkdownPreview.sublime-settings"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 236.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
